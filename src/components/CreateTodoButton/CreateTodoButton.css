@@ -1,0 +1,14 @@
+.CreateTodoButton {
+  width: 20%;
+  padding: 10px;
+  border: none;
+  background-color: #4fd1c5;
+  color: rgb(32 32 35);
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+.CreateTodoButton .icon-button {
+  color: red;
+}

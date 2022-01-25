@@ -1,0 +1,27 @@
+li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.space-icon {
+  margin: 0 60px;
+}
+
+.completed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.container-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.completed-task {
+  text-decoration: line-through;
+}

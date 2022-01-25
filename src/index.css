@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(32 32 35);
+  color: rgb(255 255 255 / 0.92)
+}
+
+.container-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.container-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
