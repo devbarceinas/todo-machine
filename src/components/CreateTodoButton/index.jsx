@@ -1,9 +1,9 @@
 import './CreateTodoButton.css'
 
-const CreateTodoButton = ({ setOpenModal }) => {
+const CreateTodoButton = ({ setOpenModal, openModal: modal }) => {
 
   const openModal = () => {
-    setOpenModal(true)
+    setOpenModal(!modal)
   }
 
   return (

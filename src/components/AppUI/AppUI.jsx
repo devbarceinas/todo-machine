@@ -52,7 +52,10 @@ const AppUI = () => {
         </Modal>
       )}
       <div className="container-button">
-        <CreateTodoButton setOpenModal={setOpenModal} />
+        <CreateTodoButton 
+          setOpenModal={setOpenModal}
+          openModal={openModal}
+        />
       </div>
     </Fragment>
   )
