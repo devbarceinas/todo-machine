@@ -1,10 +1,15 @@
 import './CreateTodoButton.css'
 
-const CreateTodoButton = () => {
+const CreateTodoButton = ({ setOpenModal }) => {
+
+  const openModal = () => {
+    setOpenModal(true)
+  }
+
   return (
     <button 
       className='CreateTodoButton'
-      onClick={() => alert('Hola')}>
+      onClick={openModal}>
       Agregar tarea
     </button>
   )

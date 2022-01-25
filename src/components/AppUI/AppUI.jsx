@@ -1,10 +1,13 @@
 import { Fragment, useContext } from 'react'
+
 import { TodoCounter } from "../../components/TodoCounter"
 import { TodoList } from "../../components/TodoList"
 import { TodoItem } from "../../components/TodoItem"
 import { CreateTodoButton } from '../../components/CreateTodoButton'
 import { TodoSearch } from "../../components/TodoSearch"
 import { Header } from "../../components/Header"
+import { Modal } from '../../components/Modal'
+
 import { TodoContext } from '../../context/TodoContext'
 
 const AppUI = () => {
@@ -14,6 +17,8 @@ const AppUI = () => {
     searchedTodos,
     completeTodo,
     deleteTodo,
+    openModal,
+    setOpenModal,
   } = useContext(TodoContext)
   
   return (
@@ -41,8 +46,13 @@ const AppUI = () => {
           }
         </TodoList>
       </div>
+      {!!openModal && (
+        <Modal>
+          <p>Hola Modal</p>
+        </Modal>
+      )}
       <div className="container-button">
-        <CreateTodoButton/>
+        <CreateTodoButton setOpenModal={setOpenModal} />
       </div>
     </Fragment>
   )

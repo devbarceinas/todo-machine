@@ -11,6 +11,7 @@ const TodoProvider = ({ children }) => {
     error
   } = useLocalStorage('TODOS_V1', [])
   const [search, setSearch] = React.useState('')
+  const [openModal, setOpenModal] = React.useState(false)
 
   // Contar cuantos todos tedos
   // ! valida si la variable que estamos verificando es falso
@@ -63,6 +64,8 @@ const TodoProvider = ({ children }) => {
     searchedTodos,
     completeTodo,
     deleteTodo,
+    openModal,
+    setOpenModal
   }
 
   return (
