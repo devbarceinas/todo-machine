@@ -1,9 +1,11 @@
 import './CreateTodoButton.css'
 
-const CreateTodoButton = ({ setOpenModal, openModal: modal }) => {
+const CreateTodoButton = ({ setOpenModal }) => {
 
   const openModal = () => {
-    setOpenModal(!modal)
+    // usar funciones en el state nos devuelve el state anterior a nuestro actualización
+    // setOpenModal(prevState => !prevState)
+    setOpenModal(true)
   }
 
   return (

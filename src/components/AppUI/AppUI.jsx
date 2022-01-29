@@ -7,6 +7,7 @@ import { CreateTodoButton } from '../../components/CreateTodoButton'
 import { TodoSearch } from "../../components/TodoSearch"
 import { Header } from "../../components/Header"
 import { Modal } from '../../components/Modal'
+import { TodoForm } from '../TodoForm'
 
 import { TodoContext } from '../../context/TodoContext'
 
@@ -48,13 +49,12 @@ const AppUI = () => {
       </div>
       {!!openModal && (
         <Modal>
-          <p>Hola Modal</p>
+          <TodoForm setOpenModal={setOpenModal} />
         </Modal>
       )}
       <div className="container-button">
         <CreateTodoButton 
           setOpenModal={setOpenModal}
-          openModal={openModal}
         />
       </div>
     </Fragment>

@@ -1,0 +1,58 @@
+form {
+  background-color: white;
+}
+
+.close-modal {
+  background-color: white;
+  color: #1E1E1F;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+
+.form-container {
+  background-color: white;
+  width: 90%;
+  max-width: 400px;
+  padding: 15px 20px;
+  border-radius: 12px;
+}
+
+input {
+  background-color: white;
+  color: #1E1E1F;
+  padding: 10px 15px;
+  width: 400px;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+label {
+  font-weight: bold;
+  color: #1E1E1F;
+  margin-bottom: 10px;
+  background-color: white;
+  display: block  ;
+}
+
+.container-buttons {
+  background-color: white;
+}
+
+.button {
+  background-color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.button-add {
+  margin-left: 10px;
+  background-color: #2980B9;
+}
+
+.button-cancel {
+  background-color: #E74C3C;
+}

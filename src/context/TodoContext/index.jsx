@@ -31,6 +31,16 @@ const TodoProvider = ({ children }) => {
       return todoText.includes(searchText)
     })
   }
+  
+  // add todo
+  const addTodo = text => {
+    const newTodos = [...todos]
+    newTodos.push({
+      completed: false,
+      text
+    })
+    saveItem(newTodos)
+  }
 
   // Complete todos
   const completeTodo = text => {
@@ -63,6 +73,7 @@ const TodoProvider = ({ children }) => {
     todos,
     searchedTodos,
     completeTodo,
+    addTodo,
     deleteTodo,
     openModal,
     setOpenModal
